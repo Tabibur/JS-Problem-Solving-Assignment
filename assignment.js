@@ -28,7 +28,7 @@ function brickCalculator(height) {
         var firstToTenth = 10 * 15 * 1000;
         var remaining = height - 10;
         var eleventhToTwentieth = remaining * 12 * 1000;
-        brick = firstToTenth + eleventhToTwenteth;
+        brick = firstToTenth + eleventhToTwentiethh;
 }
              
     else {
@@ -36,7 +36,7 @@ function brickCalculator(height) {
         var eleventhToTwentieth = 10 * 12 * 1000;
         var remaining = height - 20;
         var twentyFirstToThirty = remaining * 10 * 1000;
-        brick = firstToTenth + eleventhToTwenteth + twentyFirstToThirty;
+        brick = firstToTenth + eleventhToTwentieth + twentyFirstToThirty;
     }
     return brick;
     }
@@ -46,16 +46,16 @@ function brickCalculator(height) {
 
 
 function tinyFriend(friendlist){
-    const tiny = friendlist[0];
-    for (const i = 0; i < friendlist.length; i++){
-    const element = friendlist[i];
+    var tiny = friendlist[0];
+    for (var i = 0; i < friendlist.length; i++) {
+    var element = friendlist[i];
     if (element.length < tiny.length){
     tiny = element;
 }
 }
 return tiny;
 }
-const friendlist = ["kalam", "rabbani",  "mondol", "raj", "bikkram"];
+var friendlist = ["kalam", "rabbani",  "mondol", "raj", "bikkram"];
 
 console.log(tinyFriend(friendlist));
 
